@@ -1,0 +1,19 @@
+CREATE DATABASE `db_madhu_App`; 
+USE db_madhu_App;
+CREATE TABLE `crud`(
+    `id` INT(11) NOT NULL,
+    `firstname` VARCHAR(255) NOT NULL,
+    `lastname` VARCHAR(255) NOT NULL,
+    `gender` VARCHAR(255) NOT NULL,
+    `age` VARCHAR(255) NOT NULL,
+    `email` VARCHAR(255) NOT NULL,
+    `profileimage` VARCHAR(200) NULL
+) ENGINE = INNODB DEFAULT CHARSET = latin1; ALTER TABLE
+    `crud` ADD PRIMARY KEY(`id`);
+    --
+
+    -- AUTO_INCREMENT for table `crud`
+    --
+
+ALTER TABLE
+    `crud` MODIFY `id` INT(11) NOT NULL AUTO_INCREMENT;
