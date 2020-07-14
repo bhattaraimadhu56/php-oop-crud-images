@@ -100,21 +100,13 @@ header('location: index.php');
 			<label for="input1" class="col-sm-2 control-label">Age</label>
 			<div class="col-sm-10">
 				<select name="age" class="form-control">
-				<!-- Start of for loop for the age between 16 to 80 -->
-				<?php 
-				 for ($i=16; $i<=80; $i++)
-				 {
-					?>
-					<!--  -->
-					<option
-					 value= " <?php echo $i ?>"> 
-					 <?php echo $i ?>
-					  </option>
-
-
-				<?php } ?> 
-
-				<!-- End of for loop -->
+					<option>Select Your Age</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
 				</select>
 			</div>
 			</div>

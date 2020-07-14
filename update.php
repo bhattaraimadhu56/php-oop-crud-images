@@ -91,27 +91,14 @@ else{
 	<label for="input1" class="col-sm-2 control-label">Age</label>
 	<div class="col-sm-10">
 		<select name="age" class="form-control">
-		<!-- Start of for loop for the age between 16 to 80 -->
-		<?php 
-				 for ($i=16; $i<=80; $i++)
-				 {
-					?>
-					<!--  -->
-			<option value= " <?php echo $i ?>"    
-
-
-			 <?php if($r['age'] == $i){ echo "selected";} ?>> <?php echo $i ?>
-			 
-			 
-			 </option>
-
-
-
-
-			 <?php } ?> 
-
-<!-- End of for loop -->
-</select>
+			<option>Select Your Age</option>
+			<option value="20" <?php if($r['age'] == '20'){ echo "selected";} ?>>20</option>
+			<option value="21" <?php if($r['age'] == '21'){ echo "selected";} ?>>21</option>
+			<option value="22" <?php if($r['age'] == '22'){ echo "selected";} ?>>22</option>
+			<option value="23" <?php if($r['age'] == '23'){ echo "selected";} ?> >23</option>
+			<option value="24" <?php if($r['age'] == '24'){ echo "selected";} ?>>24</option>
+			<option value="25" <?php if($r['age'] == '25'){ echo "selected";} ?>>25</option>
+		</select>
 	</div>
 	</div>
 
